@@ -18,6 +18,14 @@
 			<artifactId>uzaygezen-core</artifactId>
 			<version>0.2</version>
 		</dependency>		
+                <dependency>
+                        <groupId>org.apache.commons</groupId>
+                        <artifactId>commons-collections4</artifactId>
+                </dependency>
+                <dependency>
+                        <groupId>org.geotools</groupId>
+                        <artifactId>gt-metadata</artifactId>
+                </dependency>
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>

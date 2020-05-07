@@ -19,7 +19,7 @@ import java.util.Map.Entry;
 import java.util.TreeSet;
 import org.apache.accumulo.core.data.Range;
 import org.apache.accumulo.core.data.TabletId;
-import org.apache.accumulo.core.data.impl.KeyExtent;
+import org.apache.accumulo.core.dataImpl.KeyExtent;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.hadoop.io.Text;

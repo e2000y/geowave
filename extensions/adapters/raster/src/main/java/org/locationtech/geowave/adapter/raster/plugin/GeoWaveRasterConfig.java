@@ -126,7 +126,8 @@ public class GeoWaveRasterConfig {
   }
 
   private static Iterator<AuthorizationFactorySPI> getAuthorizationFactoryList() {
-    return new SPIServiceRegistry(GeoWaveRasterConfig.class).load(AuthorizationFactorySPI.class);
+    return new SPIServiceRegistry(AuthorizationFactorySPI.class).load(
+        AuthorizationFactorySPI.class);
   }
 
   public static URL getAuthorizationURL(final String authorizationURL) {

@@ -24,7 +24,7 @@ public class VisibilityManagementHelper {
   @SuppressWarnings({"rawtypes", "unchecked"})
   public static final <T> ColumnVisibilityManagementSpi<T> loadVisibilityManagement() {
     final Iterator<ColumnVisibilityManagementSpi> managers =
-        new SPIServiceRegistry(VisibilityManagementHelper.class).load(
+        new SPIServiceRegistry(ColumnVisibilityManagementSpi.class).load(
             ColumnVisibilityManagementSpi.class);
     if (!managers.hasNext()) {
       return new JsonDefinitionColumnVisibilityManagement<>();

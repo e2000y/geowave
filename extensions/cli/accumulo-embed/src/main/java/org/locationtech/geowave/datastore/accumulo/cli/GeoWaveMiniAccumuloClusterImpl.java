@@ -10,8 +10,8 @@ package org.locationtech.geowave.datastore.accumulo.cli;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
-import org.apache.accumulo.minicluster.impl.MiniAccumuloClusterImpl;
-import org.apache.accumulo.minicluster.impl.MiniAccumuloConfigImpl;
+import org.apache.accumulo.miniclusterImpl.MiniAccumuloClusterImpl;
+import org.apache.accumulo.miniclusterImpl.MiniAccumuloConfigImpl;
 
 public class GeoWaveMiniAccumuloClusterImpl extends MiniAccumuloClusterImpl {
 

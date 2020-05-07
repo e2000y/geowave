@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import org.geotools.data.simple.SimpleFeatureIterator;
 import org.geotools.data.store.ContentFeatureCollection;
-import org.geotools.factory.FactoryRegistryException;
+import org.geotools.util.factory.FactoryRegistryException;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.filter.text.cql2.CQLException;

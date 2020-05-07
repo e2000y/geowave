@@ -26,7 +26,7 @@ import javax.measure.Unit;
 import javax.measure.quantity.Length;
 import org.apache.commons.lang3.tuple.Pair;
 import org.geotools.factory.CommonFactoryFinder;
-import org.geotools.factory.GeoTools;
+import org.geotools.util.factory.GeoTools;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.geometry.jts.JTS;
 import org.geotools.geometry.jts.ReferencedEnvelope;

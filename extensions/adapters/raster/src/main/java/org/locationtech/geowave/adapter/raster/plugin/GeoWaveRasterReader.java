@@ -35,7 +35,7 @@ import org.geotools.coverage.grid.io.AbstractGridFormat;
 import org.geotools.coverage.grid.io.GridCoverage2DReader;
 import org.geotools.coverage.grid.io.OverviewPolicy;
 import org.geotools.data.DataSourceException;
-import org.geotools.factory.Hints;
+import org.geotools.util.factory.Hints;
 import org.geotools.geometry.GeneralEnvelope;
 import org.geotools.parameter.Parameter;
 import org.geotools.referencing.CRS;
@@ -879,13 +879,6 @@ public class GeoWaveRasterReader extends AbstractGridCoverage2DReader implements
     }
   }
 
-  @Override
-  public int getNumOverviews() {
-    throw new UnsupportedOperationException(
-        "A coverage name must be provided, there is no support for a default coverage");
-  }
-
-  @Override
   public int getNumOverviews(final String coverageName) {
     try {
       final double[][] resolutionLevels = getResolutionLevels(coverageName);

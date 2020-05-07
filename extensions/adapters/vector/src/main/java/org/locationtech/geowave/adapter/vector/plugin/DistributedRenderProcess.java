@@ -10,7 +10,7 @@ package org.locationtech.geowave.adapter.vector.plugin;
 
 import org.geotools.data.Query;
 import org.geotools.data.simple.SimpleFeatureCollection;
-import org.geotools.factory.Hints;
+import org.geotools.util.factory.Hints;
 import org.geotools.process.ProcessException;
 import org.geotools.process.factory.DescribeParameter;
 import org.geotools.process.factory.DescribeProcess;

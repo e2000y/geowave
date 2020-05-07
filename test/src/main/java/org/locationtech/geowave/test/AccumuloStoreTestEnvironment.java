@@ -17,8 +17,8 @@ import java.util.Map;
 import org.apache.accumulo.core.conf.Property;
 import org.apache.accumulo.gc.SimpleGarbageCollector;
 import org.apache.accumulo.master.Master;
-import org.apache.accumulo.minicluster.impl.MiniAccumuloClusterImpl;
-import org.apache.accumulo.minicluster.impl.MiniAccumuloConfigImpl;
+import org.apache.accumulo.miniclusterImpl.MiniAccumuloClusterImpl;
+import org.apache.accumulo.miniclusterImpl.MiniAccumuloConfigImpl;
 import org.apache.accumulo.server.init.Initialize;
 import org.apache.accumulo.tserver.TabletServer;
 import org.apache.commons.io.FileUtils;
@@ -147,7 +147,7 @@ public class AccumuloStoreTestEnvironment extends StoreTestEnvironment {
     args.add(config.getRootPassword());
 
     final Process initProcess =
-        miniAccumulo.exec(Initialize.class, jvmArgs, args.toArray(new String[0]));
+        miniAccumulo.exec(Initialize.class, jvmArgs, args.toArray(new String[0])).getProcess();
 
     cleanup.add(initProcess);
 
@@ -168,11 +168,11 @@ public class AccumuloStoreTestEnvironment extends StoreTestEnvironment {
             + config.getZooKeepers());
 
     for (int i = 0; i < config.getNumTservers(); i++) {
-      cleanup.add(miniAccumulo.exec(TabletServer.class, jvmArgs));
+      cleanup.add(miniAccumulo.exec(TabletServer.class, jvmArgs).getProcess());
     }
 
-    cleanup.add(miniAccumulo.exec(Master.class, jvmArgs));
-    cleanup.add(miniAccumulo.exec(SimpleGarbageCollector.class, jvmArgs));
+    cleanup.add(miniAccumulo.exec(Master.class, jvmArgs).getProcess());
+    cleanup.add(miniAccumulo.exec(SimpleGarbageCollector.class, jvmArgs).getProcess());
   }
 
   @Override

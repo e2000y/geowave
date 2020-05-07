@@ -28,7 +28,7 @@ public class IngestFormatPluginRegistry implements LocalFileIngestPluginRegistry
   private static void initPluginProviderRegistry() {
     pluginProviderRegistry = new HashMap<>();
     final Iterator<IngestFormatPluginProviderSpi> pluginProviders =
-        new SPIServiceRegistry(IngestFormatPluginRegistry.class).load(
+        new SPIServiceRegistry(IngestFormatPluginProviderSpi.class).load(
             IngestFormatPluginProviderSpi.class);
     while (pluginProviders.hasNext()) {
       final IngestFormatPluginProviderSpi pluginProvider = pluginProviders.next();

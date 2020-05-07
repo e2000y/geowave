@@ -37,6 +37,7 @@ import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.Filter;
+import org.opengis.filter.expression.Expression;
 import org.opengis.geometry.BoundingBox;
 import org.opengis.referencing.FactoryException;
 import org.opengis.referencing.operation.TransformException;
@@ -179,8 +180,8 @@ public class GeoWaveFeatureCollection extends DataFeatureCollection {
     final Filter filter = query.getFilter();
     if (filter instanceof BBOXImpl) {
       final BBOXImpl bbox = ((BBOXImpl) filter);
-      final String propName = bbox.getPropertyName();
-      if ((propName == null) || propName.isEmpty()) {
+      final Expression propName = bbox.getExpression1();
+      if ((propName == null) || (propName == Expression.NIL)) {
         bbox.setPropertyName(getSchema(reader, query).getGeometryDescriptor().getLocalName());
       }
     }

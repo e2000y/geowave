@@ -26,7 +26,7 @@ public class DimensionalityTypeRegistry {
   private static synchronized void initDimensionalityTypeRegistry() {
     registeredDimensionalityTypes = new HashMap<>();
     final Iterator<DimensionalityTypeProviderSpi> dimensionalityTypesProviders =
-        new SPIServiceRegistry(DimensionalityTypeRegistry.class).load(
+        new SPIServiceRegistry(DimensionalityTypeProviderSpi.class).load(
             DimensionalityTypeProviderSpi.class);
     while (dimensionalityTypesProviders.hasNext()) {
       final DimensionalityTypeProviderSpi dimensionalityTypeProvider =

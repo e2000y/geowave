@@ -387,11 +387,13 @@ public class GeoWavePluginConfig {
   }
 
   private static Iterator<LockingManagementFactory> getLockManagementFactoryList() {
-    return new SPIServiceRegistry(GeoWavePluginConfig.class).load(LockingManagementFactory.class);
+    return new SPIServiceRegistry(LockingManagementFactory.class).load(
+        LockingManagementFactory.class);
   }
 
   private static Iterator<AuthorizationFactorySPI> getAuthorizationFactoryList() {
-    return new SPIServiceRegistry(GeoWavePluginConfig.class).load(AuthorizationFactorySPI.class);
+    return new SPIServiceRegistry(AuthorizationFactorySPI.class).load(
+        AuthorizationFactorySPI.class);
   }
 
   private static Iterator<IndexQueryStrategySPI> getInxexQueryStrategyList() {
