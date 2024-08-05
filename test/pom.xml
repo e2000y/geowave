@@ -404,7 +404,7 @@
 										<artifactItem>
 											<artifactId>protobuf-java</artifactId>
 											<groupId>com.google.protobuf</groupId>
-											<version>2.5.0</version>
+											<version>3.16.3</version>
 										</artifactItem>
 										<artifactItem>
 											<artifactId>hbase-client</artifactId>

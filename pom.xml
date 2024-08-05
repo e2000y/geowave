@@ -64,44 +64,44 @@
 		<imageio.ext.version>1.1.25</imageio.ext.version>
 		<guava.version>25.1-jre</guava.version>
 		<hadoop.env.classifier>hadoop2</hadoop.env.classifier>
-		<geoserver.version>2.17.0</geoserver.version>
+		<geoserver.version>2.23.6</geoserver.version>
 		<accumulo.version>2.0.0</accumulo.version>
 		<thrift.version>0.12.0</thrift.version>
 		<accumulo.api>2.0</accumulo.api>
 		<bigtable.version>1.2.0</bigtable.version>
 		<cassandra.version>3.11.3</cassandra.version>
-		<redisson.version>3.8.2</redisson.version>
+		<redisson.version>3.22.0</redisson.version>
 		<rocksdb.version>5.15.10</rocksdb.version>
 		<cassandraclient.version>3.5.1</cassandraclient.version>
 		<kuduclient.version>1.8.0</kuduclient.version>
-		<grpc.version>1.13.1</grpc.version>
-		<netty.version>4.1.45.Final</netty.version>
-		<protobuf.version>3.5.1</protobuf.version>
+		<grpc.version>1.53.0</grpc.version>
+		<netty.version>4.1.100.Final</netty.version>
+		<protobuf.version>3.16.3</protobuf.version>
 		<guice.version>3.0</guice.version>
 		<skipITs>true</skipITs>
 		<vfs2.version>2.1</vfs2.version>
 		<hbase.version>1.4.6</hbase.version>
-		<hadoop.version>2.8.4</hadoop.version>
-		<avro.version>1.7.6</avro.version>
-		<awssdk.version>1.11.281</awssdk.version>
+		<hadoop.version>3.2.4</hadoop.version>
+		<avro.version>1.11.3</avro.version>
+		<awssdk.version>1.12.261</awssdk.version>
 		<httpclient.version>4.5.2</httpclient.version>
 		<httpcore.version>4.4.4</httpcore.version>
 		<geotools.scope>compile</geotools.scope>
 		<accumulo.scope>compile</accumulo.scope>
 		<hbase.scope>compile</hbase.scope>
 		<hadoop.scope>compile</hadoop.scope>
-		<jetty.version>9.4.24.v20191120</jetty.version>
-		<zookeeper.version>3.4.6</zookeeper.version>
+		<jetty.version>9.4.51.v20230217</jetty.version>
+		<zookeeper.version>3.8.4</zookeeper.version>
 		<jersey.version>2.23.1</jersey.version>
 		<scala.version>2.11.12</scala.version>
 		<kafka.artifact>kafka_2.11</kafka.artifact>
 		<kafka.version>0.8.2.1</kafka.version>
-		<snappy.version>1.1.2.6</snappy.version>
+		<snappy.version>1.1.10.4</snappy.version>
 		<collections4.version>4.1</collections4.version>
 		<jcommander.version>1.48</jcommander.version>
 		<jackson.version>1.9.13</jackson.version>
-		<fasterxml.jackson.version>2.9.5</fasterxml.jackson.version>
-		<spring-security.version>4.2.7.RELEASE</spring-security.version>
+		<fasterxml.jackson.version>2.12.7.1</fasterxml.jackson.version>
+		<spring-security.version>5.7.12</spring-security.version>
 		<slf4j.version>1.7.21</slf4j.version>
 		<junit.version>4.11</junit.version>
 		<clearspring.version>2.9.6</clearspring.version>
@@ -181,7 +181,7 @@
 			<dependency>
 				<groupId>org.apache.thrift</groupId>
 				<artifactId>libthrift</artifactId>
-				<version>0.9.3</version>
+				<version>0.14.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.clearspring.analytics</groupId>
@@ -196,7 +196,7 @@
 			<dependency>
 				<groupId>xerces</groupId>
 				<artifactId>xercesImpl</artifactId>
-				<version>2.11.0</version>
+				<version>2.12.2</version>
 			</dependency>
 			<dependency>
 				<groupId>xml-apis</groupId>
@@ -573,7 +573,7 @@
 			<dependency>
 				<groupId>org.hsqldb</groupId>
 				<artifactId>hsqldb</artifactId>
-				<version>2.3.0</version>
+				<version>2.7.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.geoserver</groupId>
